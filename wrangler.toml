@@ -5,8 +5,8 @@ compatibility_date = "2025-11-04"
 keep_vars = true
 
 #[[kv_namespaces]]
-#binding = "KV"			#KV绑定名默认不可修改
-#id = ""				#KV数据库id
+#binding = "KV"                        #KV绑定名默认不可修改
+#id = ""                                #KV数据库id
 
 [observability.logs]
 enabled = true
@@ -19,5 +19,10 @@ enabled = true
 head_sampling_rate = 1
 persist = true
 
-[observability.issue_detection]
+[observability.issues]
 enabled = true
+
+[[routes]]
+pattern = "clash-node.joker2yue.com"
+zone_name = "joker2yue.com"
+custom_domain = true
