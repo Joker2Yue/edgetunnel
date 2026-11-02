@@ -23,8 +23,3 @@ persist = true
 
 [observability.issues]
 enabled = true
-
-[[routes]]
-pattern = "clash-node.joker2yue.com"
-zone_name = "joker2yue.com"
-custom_domain = true
